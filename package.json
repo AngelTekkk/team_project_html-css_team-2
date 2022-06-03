@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://riko1212.github.io/bc-22-test",
+  "homepage": "https://angeltekkk.github.io/team_project_html-css_team-2/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /bc-22-test/"
+    "build": "parcel build src/*.html --public-url /team_project_html-css_team-2/"
   },
   "repository": {
     "type": "git",
