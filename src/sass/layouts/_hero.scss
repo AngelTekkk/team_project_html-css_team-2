@@ -1,0 +1,27 @@
+.hero {
+    &__title {
+        @include title;
+        @include desktop {
+            font-size: 58px;
+        }
+    }
+
+    &__text {
+
+    }
+
+    &__pre-title {
+
+        &--accent {
+
+        }
+    }
+
+    &__img {
+
+    }
+
+    &__button {
+        @include button;
+    }
+}

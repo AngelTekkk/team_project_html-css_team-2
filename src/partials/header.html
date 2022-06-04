@@ -1,18 +1,83 @@
 <header class="section-header">
-  <a href="index,html" class="logo">
-    <p class="logo__text">Hell</p>
-    <svg class="logo__icon">
-      <use></use>
-    </svg>
-    <p class="logo__text">EN</p>
-    <p class="logo__title"><span>Hellish</span>english</p>
-    <button class="button-mobmenu" type="button">
-      <svg class="button-mobmenu__icon">
-        <use></use>
-      </svg>
-      <svg class="button-mobmenu__icon">
-        <use></use>
-      </svg>
-    </button>
-  </a>
+  <div class="container section-header__container">
+    <div class="logo-header">
+      <a href="index.html" class="logo">
+        <p class="logo__text">Hell</p>
+        <svg width="16" height="20">
+          <use class="logo__icon" href="./images/logo-icon-mob.svg"></use>
+        </svg>
+        <p class="logo__text">EN</p>
+      </a>
+      <p class="logo__title">
+        <span class="logo__title--accent">Hellish </span>english
+      </p>
+    </div>
+    <nav class="header-nav">
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a href="#programs" class="navigation__link">Studying program</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link">About</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Training options</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts" class="navigation__link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button type="button" class="button-header">consultation by phone</button>
+      <button
+        class="button-mobmenu"
+        type="button"
+        aria-controls="menu"
+        data-menu-button
+      >
+        <svg aria-label="Переключатель мобильного меню" width="21" height="18">
+          <use
+            class="button-mobmenu__icon--open"
+            href="./images/icons.svg#icon-menu"
+          ></use>
+          <use
+            class="button-mobmenu__icon--close"
+            href="./images/icons.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mob-menu" id="menu" data-menu>
+      <div class="mob-menu__logo">
+        <a href="index.html" class="logo">
+          <p class="logo__text">Hell</p>
+          <svg width="16" height="20">
+            <use class="logo__icon" href="./images/logo-icon-mob.svg"></use>
+          </svg>
+          <p class="logo__text">EN</p>
+        </a>
+        <p class="logo__title">
+          <span class="logo__title--accent">Hellish </span>english
+        </p>
+      </div>
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a href="#programs" class="navigation__link">Studying program</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link">About</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Training options</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts" class="navigation__link">Contacts</a>
+        </li>
+      </ul>
+      <button type="button" class="mob-menu__button">
+        Consultation by phone
+      </button>
+    </div>
+  </div>
 </header>
