@@ -1,0 +1,103 @@
+.section-header {
+    position: relative;
+    padding-top: 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header-nav {
+    display: none;
+    @include desktop {
+        display: flex;
+    }
+}
+
+.buttons {
+    display: flex;
+}
+
+.button-header {
+    @include button-inverse;
+    display: none;
+    width: 260px;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.button-mobmenu {
+    display: block;
+    margin-left: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+
+    outline: 1px solid tomato;
+
+    @include desktop {
+        display: none;
+    }
+
+    &__icon {
+
+    }
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+
+    &__icon-close {
+        display: none;
+    }
+
+    &.is-open &__icon--close {
+        display: block;
+    }
+
+    &.is-open &__icon--open {
+        display: none;
+    }
+}
+
+.mob-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 20px;
+    z-index: 1;
+    color: $white-color;
+    background: rgba(17, 21, 24, 0.9);
+
+    @include desktop {
+        display: none;
+    }
+
+    &__logo {
+        @include mobile {
+            width: 440px;
+            margin: auto;
+        }
+        @include tablet {
+            width: 704px;
+        }
+    }
+
+    &__button {
+        @include button-inverse;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        @include tablet {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.logo {
+    @include link;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        @include font(800, 17px, 1.2, 0.04em);
+        @include tablet {
+            font-size: 26px;
+            line-height: 1.231;
+        }
+    }
+
+    &__title {
+        @include font(700, 5px, 1.2, 0.18em);
+        @include tablet {
+            font-size: 8px;
+            line-height: 1.25;
+        }
+
+         &--accent {
+             color: $accent-color;
+         }
+    }
+
+    &__icon {
+        width: 16px;
+        height: 20px;
+    }
+}
