@@ -53,6 +53,12 @@
     &__link {
         @include link;
         @include font(600, 14px, 1.214, 00.08em);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            @include transition;
+        }
     }
     &__icon {
         width: 20px;
