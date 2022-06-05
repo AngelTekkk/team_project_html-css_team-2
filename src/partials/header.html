@@ -3,9 +3,16 @@
     <div class="logo">
       <a href="index.html" class="logo__link">
         <p class="logo__text">Hell</p>
-        <svg width="16" height="20">
-          <use class="logo__icon" href="/src/images/logo-icon-mob.svg"></use>
-        </svg>
+        <img
+          srcset="
+            ./images/logo-icon-mob.svg 16w,
+            ./images/logo-icon-tab.svg 22w
+          "
+          sizes="(min-width: 768px) 22px, (max-width: 767px) 16px, 100vw"
+          src="./images/logo-icon-mob.svg"
+          alt="fire icon"
+          class="logo__icon"
+        />
         <p class="logo__text">EN</p>
       </a>
       <p class="logo__title">
@@ -88,5 +95,5 @@
       </button>
     </div>
   </div>
-  <img src="/src/images/wave-bgnd-det.png" alt="" class="bg-img" />
+  <img src="./images/wave-bgnd-mob.png" alt="" class="bg-img" />
 </header>
