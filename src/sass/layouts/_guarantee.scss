@@ -48,10 +48,16 @@
     content: '';
     height: 85%;
     width: 0px;
-    border-left: 1px dashed #3d3d3d;
+    border-left: 1px dashed #b9b9b9;
     position: absolute;
     top: 25px;
     left: 8px;
+
+    @media screen and (min-width: 768px) {
+      height: 70%;
+      top: 32px;
+      left: 11px;
+    }
   }
   &::after {
     content: '';
@@ -62,11 +68,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
+
+    @media screen and (min-width: 768px) {
+      width: 22px;
+      height: 30px;
+      background-image: url(../images/logo-icon-tab.svg);
+    }
   }
 }
 
-.guarantee__item:last-child .garantee__text::before {
-  border-color: transparent;
+.garantee__item:last-child .garantee__text::before {
+  display: none;
 }
 
 .guarantee__accent {
