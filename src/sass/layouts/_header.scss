@@ -123,9 +123,12 @@
 }
 
 .bg-img {
-    width: 1680px;
+    width: 768px;
+    height: 582px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
+    // left: -64px;
     z-index: -1;
+    
 }
