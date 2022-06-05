@@ -1,11 +1,71 @@
 .programs {
-    color: rgb(0, 0, 255);
-    // text-align: center;
+
+    background-color: $accent-text-color; //! $text-color
+    padding-top: 20px;
+    padding-bottom: 604px;
+
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 364px;
+    }
+
+    // &__container {
+    //     @include tablet {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         justify-content: space-between;
+    //     }
+    // }
+
+    &__title {
+        @include title;
+        // width: 280px;
+        // width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+        color: $white-color;
+
+        @include tablet {
+            // width: 320px;
+            text-align: left;
+        }
+
+        @include desktop {
+            // width: 560px;
+            font-size: 58px;
+        }
+    }
+
+    // &__text {
+    //     @include font(500, 14px, 1.57, 00.08em);
+    //     color: $text-color;
+
+    //     @include desktop {
+    //         font-size: 20px;
+    //         line-height: 1.649;
+    //     }
+    // }
+
+    // &__pre-title {
+    //     @include font(700, 14px, 1.57, 00.08em);
+    //     margin-bottom: 40px;
+
+    //     @include tablet {
+    //         margin-bottom: 48px;
+    //     }
+
+    //     @include desktop {
+    //         font-size: 20px;
+    //         line-height: 1.649;
+    //     }
+
+    //     &--accent {
+    //         @include mobile-upto-desktop {
+    //             display: block;
+    //             color: $accent-color;
+    //         }
+    //     }
+    // }
+
+    
 }
-
-.programs h1, h2, h3  {
-    text-align: center;
-    color: currentColor;
-}
-
-
