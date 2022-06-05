@@ -65,6 +65,7 @@
     &:hover,
     &:focus {
         fill: $accent-color;
+        @include transition;
     }
 
     &__icon-close {
@@ -119,4 +120,12 @@
             display: none;
         }
     }
+}
+
+.bg-img {
+    width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    z-index: -1;
 }
