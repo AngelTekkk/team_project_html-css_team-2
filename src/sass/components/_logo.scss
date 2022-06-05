@@ -1,10 +1,14 @@
 .logo {
-    @include link;
-    display: flex;
-    align-items: center;
 
+    &__link {
+        @include link;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+    
     &__text {
-        @include font(800, 17px, 1.2, 0.04em);
+        @include font(800, 17px, 1.175, 0.04em);
         @include tablet {
             font-size: 26px;
             line-height: 1.231;
