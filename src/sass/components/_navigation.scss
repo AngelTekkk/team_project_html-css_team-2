@@ -23,12 +23,21 @@
         }
         @include desktop {
             width: auto;
+            margin-right: 40px;
         }
     }
 
     &__link {
         @include link;
         @include font(800, 20px, 1.8, 0.03em);
+        @include tablet {
+            font-size: 26px;
+        }
+        @include desktop {
+            @include font(700, 14px, 1.214, 00.14em);
+            text-transform: uppercase;
+            color: $text-color;
+        }
 
         &:hover,
         &:focus {

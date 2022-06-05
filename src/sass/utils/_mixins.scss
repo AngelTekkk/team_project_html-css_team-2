@@ -16,6 +16,12 @@
     }
 }
 
+@mixin mobile-upto-desktop {
+    @media screen and (max-width: 1679px) {
+        @content;
+    }
+}
+
 @mixin font($fw, $fs, $lh, $ls) {
     font-weight: $fw;
     font-size: $fs;
