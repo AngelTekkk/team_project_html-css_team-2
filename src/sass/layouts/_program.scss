@@ -1,4 +1,4 @@
-.programs {
+.program {
 
     background-color: $accent-text-color; //! $text-color
     padding-top: 20px;
@@ -35,6 +35,12 @@
             font-size: 58px;
         }
     }
+
+    &__list,
+    &__second-list {
+    @include list;
+    }
+
 
     // &__text {
     //     @include font(500, 14px, 1.57, 00.08em);
