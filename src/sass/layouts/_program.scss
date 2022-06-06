@@ -343,6 +343,10 @@
         @include font(700, 12px, 1.64, 0.08em);
         color: $accent-color;
 
+        &::before {
+            content: "\2014 \0020";
+        }
+
         // @include tablet {
         //     font-size: 20px;
         //     line-height: 1.67;
@@ -351,6 +355,7 @@
         @include desktop {
             margin-bottom: 8px;
             font-size:  20px;
+            width: 240px;
         }
     }
 
@@ -386,16 +391,12 @@
         
                 top: 10px;
                 left: -87px;
-        
-                // background-color: $white-color;
             }
 
         }
 
         @include desktop {
             margin-bottom: 0;
-
-            width: 240px;
             
             &:not(:last-child) {
                 margin-right: 40px;
@@ -411,8 +412,6 @@
         
                 top: -48px;
                 left: -175px;
-        
-                // background-color: $white-color;
             }
         }
     }
@@ -476,8 +475,6 @@
         @include desktop {
             margin-bottom: 24px;
 
-            width: 240px;
-
             &:not(:last-child) {
                 margin-right: 0;
             }
@@ -495,6 +492,7 @@
 
         @include desktop {
             display: block;
+            width: 240px;
         }
     }
 
