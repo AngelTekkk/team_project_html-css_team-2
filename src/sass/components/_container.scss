@@ -10,13 +10,14 @@
 
     @include tablet {
         width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
+        // padding-left: 32px;
+        // padding-right: 32px;
     }
 
     @include desktop {
-        width: 1680px;
-        padding-left: 16px;
-        padding-right: 16px;
+        // width: 1680px;
+        width: 1440px;
+        // padding-left: 16px;
+        // padding-right: 16px;
     }
 }
