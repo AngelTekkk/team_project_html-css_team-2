@@ -151,7 +151,7 @@
             display: inline-block;
             // margin-bottom: 6px;
 
-            // !++++++++++ кружочки tablet ++++++++++++
+        // !++++++++++ кружочки tablet ++++++++++++
         &.one::before {
             content: "";
             position: absolute;
@@ -247,6 +247,93 @@
                 font-size: 30px;
                 line-height: 0.93;
             }
+
+            // !++++++++++ кружочки desktop ++++++++++++
+        &.one::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 16px;
+            height: 16px;
+    
+            top: -55px;
+            left: 28px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+
+        &.two::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 16px;
+            height: 16px;
+    
+            top: -55px;
+            left: 309px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+        
+        &.three::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 16px;
+            height: 16px;
+    
+            top: -55px;
+            left: 588px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+
+        &.four::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 16px;
+            height: 16px;
+    
+            top: -55px;
+            left: 871px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+
+        &.five::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 16px;
+            height: 16px;
+    
+            top: -55px;
+            left: 1147px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+        // !++++++++++ К О Н Е Ц кружочки desktop ++++++++++++
         }
     }
 
