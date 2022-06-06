@@ -60,6 +60,7 @@
         @include font(700, 14px, 2, 0.08em);
         color: $white-color;
 
+        // !++++++++++ кружочки mobile ++++++++++++
         &.one::before {
             content: "";
             position: absolute;
@@ -93,7 +94,7 @@
 
             z-index: 1;
         }
-
+        
         &.three::before {
             content: "";
             position: absolute;
@@ -136,7 +137,7 @@
             width: 12px;
             height: 12px;
     
-            top: 1177px;
+            top: 1117px;
             left: 3px;
     
             background-color: $accent-color;
@@ -144,10 +145,98 @@
 
             z-index: 1;
         }
+        // !++++++++++ К О Н Е Ц кружочки mobile ++++++++++++
 
         @include tablet {
             display: inline-block;
             // margin-bottom: 6px;
+
+            // !++++++++++ кружочки tablet ++++++++++++
+        &.one::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 12px;
+            height: 12px;
+    
+            top: 9px;
+            left: -93px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+
+        &.two::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 12px;
+            height: 12px;
+    
+            top: 183px;
+            left: -93px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+        
+        &.three::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 12px;
+            height: 12px;
+    
+            top: 342px;
+            left: -93px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+
+        &.four::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 12px;
+            height: 12px;
+    
+            top: 515px;
+            left: -93px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+
+        &.five::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 12px;
+            height: 12px;
+    
+            top: 770px;
+            left: -93px;
+    
+            background-color: $accent-color;
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+        // !++++++++++ К О Н Е Ц кружочки tablet ++++++++++++
         }
 
         @include desktop {
@@ -190,7 +279,7 @@
             display: block;
     
             width: 1px;
-            height: 1170px;
+            height: 1115px;
     
             top: 10px;
             //right: 193px; // 280px
