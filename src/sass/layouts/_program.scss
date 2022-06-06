@@ -90,7 +90,7 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++
     &__second-item {
         @include font(500, 12px, 1.67, 0.08em);
-        color: $text-color-second;
+        color: $text-color-opacity;
 
         // @include tablet {
         //     font-size: 20px;
