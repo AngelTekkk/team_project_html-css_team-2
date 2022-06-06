@@ -5,11 +5,7 @@
     padding-top: 20px;
     padding-bottom: 604px;
 
-    &__list,
-    &__second-list {
-        @include list;
-    }
-
+    
     @include tablet {
         padding-top: 60px;
         padding-bottom: 364px;
@@ -20,6 +16,14 @@
         padding-bottom: 436px;
     }
 
+    .container {
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
+
     // &__container {
     //     @include tablet {
     //         display: flex;
@@ -28,12 +32,13 @@
     //     }
     // }
 
+    // !++++++++++++ Стилизация текста ++++++++++++++++++
     &__title {
         @include title;
         // width: 280px;
         // width: 100%;
         margin-bottom: 40px;
-        text-align: center;
+        // text-align: center;
         color: $white-color;
 
         @include tablet {
@@ -47,8 +52,9 @@
         }
     }
 
-// !++++++++++++ Стилизация текста ++++++++++++++++++
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__first-title {
+        // text-align: left;
         margin-bottom: 4px;
         text-transform: uppercase;
         @include font(700, 14px, 2, 0.08em);
@@ -70,7 +76,7 @@
         }
     }
 
-// ++++++++++++++++++++++++++++++++++++++++++++++++++
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__second-title {
         margin-bottom: 4px;
         @include font(700, 12px, 1.64, 0.08em);
@@ -84,6 +90,21 @@
         @include desktop {
             margin-bottom: 8px;
             font-size:  20px;
+        }
+    }
+
+    // ++++++++++++++++++++++++++++++++++++++++++++++++
+    &__first-item {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        // @include tablet {
+        //     margin-bottom: 8px;
+        // }
+
+        @include desktop {
+            margin-bottom: 0;
         }
     }
 
@@ -103,11 +124,28 @@
         }
     }
 
-// ============================================
-        &__second-list {
-            margin-bottom: 4px;
+    // ============================================
+    &__list {
+        @include list;
+        display: inline-block;
+        text-align: left;
+        padding-left: 30px;
+        // background-color: tomato;
+
+        @include tablet {
+            margin-bottom: 40px;
+        }
+
+        @include desktop {
+            margin-bottom: 24px;
+        }
+    }
+
+    // ============================================
+    &__second-list {
+        @include list;
+        margin-bottom: 4px;
             
-    
         @include tablet {
             margin-bottom: 40px;
         }
@@ -116,9 +154,15 @@
             margin-bottom: 24px;
             
         }
+    }
 }
-
 // !+++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
 
 
     // &__pre-title {
@@ -142,5 +186,3 @@
     //     }
     // }
 
-    
-}
