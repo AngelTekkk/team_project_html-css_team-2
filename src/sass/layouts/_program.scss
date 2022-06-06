@@ -1,6 +1,7 @@
 .program {
 
-    background-color: $accent-text-color; //! $text-color
+    background-color: $title-color; 
+    
     padding-top: 20px;
     padding-bottom: 604px;
 
@@ -46,8 +47,9 @@
         }
     }
 
-
+// !++++++++++++ Стилизация текста ++++++++++++++++++
     &__first-title {
+        margin-bottom: 4px;
         text-transform: uppercase;
         @include font(700, 14px, 2, 0.08em);
         color: $white-color;
@@ -58,6 +60,7 @@
         // }
 
         @include desktop {
+            margin-bottom: 24px;
             font-size:  20px;
             line-height: 1.4;
             &--size {
@@ -65,19 +68,57 @@
                 line-height: 0.93;
             }
         }
-        
-        
     }
 
-    // !++++++++++++++++++++++++++++++++++++++
-        // &___first-title--size {
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
+    &__second-title {
+        margin-bottom: 4px;
+        @include font(700, 12px, 1.64, 0.08em);
+        color: $accent-color;
 
-        //     @include desktop {
-        //         font-size:  30px;
-        //         line-height: 0.93;
-        //     }
+        // @include tablet {
+        //     font-size: 20px;
+        //     line-height: 1.649;
         // }
-    // !++++++++++++++++++++++++++++++++++++++
+
+        @include desktop {
+            margin-bottom: 8px;
+            font-size:  20px;
+        }
+    }
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++
+    &__second-item {
+        @include font(500, 12px, 1.67, 0.08em);
+        color: $text-color-second;
+
+        // @include tablet {
+        //     font-size: 20px;
+        //     line-height: 1.649;
+        // }
+
+        @include desktop {
+            font-size:  18px;
+            line-height: 1.56;
+        }
+    }
+
+// ============================================
+        &__second-list {
+            margin-bottom: 4px;
+            
+    
+        @include tablet {
+            margin-bottom: 40px;
+        }
+
+        @include desktop {
+            margin-bottom: 24px;
+            
+        }
+}
+
+// !+++++++++++++++++++++++++++++++++++++++++++++++
 
 
     // &__pre-title {
