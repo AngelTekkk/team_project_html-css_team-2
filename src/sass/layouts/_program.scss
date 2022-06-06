@@ -42,8 +42,9 @@
         color: $white-color;
 
         @include tablet {
-            // width: 320px;
+            // width: 334px;
             text-align: left;
+            margin-left: 55px;
         }
 
         @include desktop {
@@ -60,10 +61,9 @@
         @include font(700, 14px, 2, 0.08em);
         color: $white-color;
 
-        // @include tablet {
-        //     font-size: 20px;
-        //     line-height: 1.649;
-        // }
+        @include tablet {
+            // margin-bottom: 4px;
+        }
 
         @include desktop {
             margin-bottom: 24px;
@@ -99,9 +99,10 @@
             margin-bottom: 40px;
         }
 
-        // @include tablet {
-        //     margin-bottom: 8px;
-        // }
+        @include tablet {
+            // margin-bottom: 8px;
+            // display: flex;
+        }
 
         @include desktop {
             margin-bottom: 0;
@@ -134,6 +135,7 @@
 
         @include tablet {
             margin-bottom: 40px;
+            margin-left: 216px;
         }
 
         @include desktop {
@@ -147,7 +149,12 @@
         margin-bottom: 4px;
             
         @include tablet {
-            margin-bottom: 40px;
+
+            width: 155px;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
         }
 
         @include desktop {
@@ -155,9 +162,29 @@
             
         }
     }
-}
 // !+++++++++++++++++++++++++++++++++++++++++++++++
+    &__first-cont {
+        // background-color: rgb(89, 143, 75);
 
+        @include tablet {
+            // margin-bottom: 8px;
+            display: flex;
+            
+        }
+
+        @include desktop {
+            // margin-bottom: 0;
+        }
+    }
+
+
+
+
+
+// ____________________________________________________
+}
+
+    
 
 
 
