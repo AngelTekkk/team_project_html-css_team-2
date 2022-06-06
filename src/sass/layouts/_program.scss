@@ -4,9 +4,19 @@
     padding-top: 20px;
     padding-bottom: 604px;
 
+    &__list,
+    &__second-list {
+        @include list;
+    }
+
     @include tablet {
         padding-top: 60px;
         padding-bottom: 364px;
+    }
+
+    @include desktop {
+        padding-top: 80px;
+        padding-bottom: 436px;
     }
 
     // &__container {
@@ -36,21 +46,39 @@
         }
     }
 
-    &__list,
-    &__second-list {
-    @include list;
+
+    &__first-title {
+        text-transform: uppercase;
+        @include font(700, 14px, 2, 0.08em);
+        color: $white-color;
+
+        // @include tablet {
+        //     font-size: 20px;
+        //     line-height: 1.649;
+        // }
+
+        @include desktop {
+            font-size:  20px;
+            line-height: 1.4;
+            &--size {
+                font-size: 30px;
+                line-height: 0.93;
+            }
+        }
+        
+        
     }
 
+    // !++++++++++++++++++++++++++++++++++++++
+        // &___first-title--size {
 
-    // &__text {
-    //     @include font(500, 14px, 1.57, 00.08em);
-    //     color: $text-color;
+        //     @include desktop {
+        //         font-size:  30px;
+        //         line-height: 0.93;
+        //     }
+        // }
+    // !++++++++++++++++++++++++++++++++++++++
 
-    //     @include desktop {
-    //         font-size: 20px;
-    //         line-height: 1.649;
-    //     }
-    // }
 
     // &__pre-title {
     //     @include font(700, 14px, 1.57, 00.08em);
