@@ -35,10 +35,7 @@
     // !++++++++++++ Стилизация текста ++++++++++++++++++
     &__title {
         @include title;
-        // width: 280px;
-        // width: 100%;
         margin-bottom: 40px;
-        // text-align: center;
         color: $white-color;
 
         @include tablet {
@@ -48,8 +45,9 @@
         }
 
         @include desktop {
-            // width: 560px;
             font-size: 58px;
+            margin-bottom: 136px;
+            margin-left: 16px;
         }
     }
 
@@ -62,7 +60,8 @@
         color: $white-color;
 
         @include tablet {
-            // margin-bottom: 4px;
+            display: inline-block;
+            // margin-bottom: 6px;
         }
 
         @include desktop {
@@ -84,7 +83,7 @@
 
         // @include tablet {
         //     font-size: 20px;
-        //     line-height: 1.649;
+        //     line-height: 1.67;
         // }
 
         @include desktop {
@@ -106,6 +105,12 @@
 
         @include desktop {
             margin-bottom: 0;
+
+            width: 240px;
+            
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
         }
     }
 
@@ -116,7 +121,7 @@
 
         // @include tablet {
         //     font-size: 20px;
-        //     line-height: 1.649;
+        //     line-height: 1.67;
         // }
 
         @include desktop {
@@ -139,7 +144,9 @@
         }
 
         @include desktop {
+            display: flex;
             margin-bottom: 24px;
+            margin-left: 156px;
         }
     }
 
@@ -149,8 +156,13 @@
         margin-bottom: 4px;
             
         @include tablet {
+            margin-bottom: 0px;
 
-            width: 155px;
+            width: 110px;
+
+            &:not(:last-child) {
+                width: 155px;
+            }
 
             &:not(:last-child) {
                 margin-right: 30px;
@@ -159,7 +171,12 @@
 
         @include desktop {
             margin-bottom: 24px;
-            
+
+            width: 240px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
         }
     }
 // !+++++++++++++++++++++++++++++++++++++++++++++++
@@ -173,7 +190,7 @@
         }
 
         @include desktop {
-            // margin-bottom: 0;
+            display: block;
         }
     }
 
