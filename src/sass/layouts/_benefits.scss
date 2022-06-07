@@ -27,9 +27,53 @@
             
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     
-        // background-color: $white-color;
-        // background-color: tomato;
-        // color: red;
+        @include tablet {
+            // padding-top: 0;
+            // padding-bottom: 20px;
+            // padding-left: 0;
+            // padding-right: 44px;
+        
+            // min-width: 280px;
+            // // height: 646px;
+        
+            // left: 50%;
+            // transform: translateX(-50%);
+            // top: 50%;
+            // top: -459px;
+            // // transform: translateY(-50%);
+        
+            // background-image: linear-gradient(to top,
+            //         $white-color 89%,
+            //         $title-color 11%);
+        
+            // background-repeat: no-repeat;
+        
+            // box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
+        }
+
+        @include desktop {
+            // padding-top: 0;
+            // padding-bottom: 20px;
+            // padding-left: 0;
+            // padding-right: 44px;
+        
+            // min-width: 280px;
+            // // height: 646px;
+        
+            // left: 50%;
+            // transform: translateX(-50%);
+            // top: 50%;
+            // top: -459px;
+            // // transform: translateY(-50%);
+        
+            // background-image: linear-gradient(to top,
+            //         $white-color 89%,
+            //         $title-color 11%);
+        
+            // background-repeat: no-repeat;
+        
+            // box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
+        }
     }
 
     // !++++++++++++ Стилизация заголовка ++++++++++++++++++
@@ -42,27 +86,32 @@
         line-height: 1.36;
         color: $white-color;
 
-        // @include tablet {
-        //     // width: 334px;
-        //     text-align: left;
-        //     margin-left: 55px;
-        // }
+        @include tablet {
+            min-width: 492px;
 
-        // @include desktop {
-        //     font-size: 58px;
-        //     margin-bottom: 136px;
-        //     margin-left: 16px;
-        // }
+            text-align: center;
+            font-size: 26px;
+            line-height: 1.3;
+        }
+
+        @include desktop {
+            @include visually-hidden
+        }
     }
 
 
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__list {
         @include list;
-        counter-reset: number;
+        counter-reset: number; //! Задает значение CSS-счётчика, равным 0 
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            // margin-left: -30px;
+        }
         
     }
-
 
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__item {
@@ -71,11 +120,18 @@
         &:not(:last-child) {
                 margin-bottom: 40px;
         }
-        
+
+        @include tablet {
+            width: 236px;
+        }
+
+        @include desktop {
+            width: 236px;
+        }
     }
     
 
-    // ++++++++++++++++++++++++++++++++++++++++++++++++++
+    // !++++++++++++++++++ CSS-счетчик +++++++++++++++++++++
     &__counter {
         margin-bottom: 8px;
 
@@ -91,7 +147,9 @@
             content: "\2014 \0020 0" counter(number) "";
         }
     }    
-    
+    // !______________________________________________________
+
+
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__text {
 
@@ -101,3 +159,4 @@
         
     }
 }
+// ________________________________________________________
