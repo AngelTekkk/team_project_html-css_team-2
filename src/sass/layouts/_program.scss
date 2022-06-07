@@ -21,18 +21,24 @@
     }
 
 
-// !--------------- не открывается картинка ------------------
+// !------------ Рабочий вариаант через ::after ---------------
     // &::after {
-    //     content: "../images/program-bcg-480-1x-min.png";
+    //     content: "";
     //     position: absolute;
-    //     display: block;
+    //     background-image:
+    //             url("../images/program-bcg-480-2x-min.png");
+    //     background-repeat: no-repeat;
+    //     background-position: right;
+    //     background-size: contain;
 
     //     width: 176px;
     //     height: 137px;
+        
+    //     // width: auto;
+    //     // height: auto;
 
-    //     bottom: 0;
+    //     bottom: 499px;
     //     right: 0;
-    //     z-index: 1;
     // }
 // !____________________________________________________________
     
@@ -398,11 +404,6 @@
             content: "\2014 \0020";
         }
 
-        // @include tablet {
-        //     font-size: 20px;
-        //     line-height: 1.67;
-        // }
-
         @include desktop {
             margin-bottom: 8px;
             font-size:  20px;
@@ -470,11 +471,6 @@
     &__second-item {
         @include font(500, 12px, 1.67, 0.08em);
         color: $text-color-opacity;
-
-        // @include tablet {
-        //     font-size: 20px;
-        //     line-height: 1.67;
-        // }
 
         @include desktop {
             font-size:  18px;
