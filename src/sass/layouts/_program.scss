@@ -491,7 +491,7 @@
         // background-color: tomato;
 
         @include tablet {
-            margin-bottom: 40px;
+            margin-bottom: 0; //! убрал 40px
             margin-left: 216px;
         }
 
