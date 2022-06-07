@@ -11,7 +11,7 @@
 
     background-size: auto auto;
     background-repeat: no-repeat;
-    background-position: right 0 bottom 505px;
+    background-position: right 0 bottom 505px; // ! 
 
     @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
         
             background-size: 368px auto;
             background-repeat: no-repeat;
-            background-position: right 0 bottom 290px;
+            background-position: right 0 bottom 290px; // !
         
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -64,7 +64,7 @@
 
     @include desktop {
         padding-top: 80px;
-        padding-bottom: 436px; // 263px  // !436px;
+        padding-bottom: 436px; 
 
         background-image:
                 url("../images/program-bcg-1680-1x-min.png");
