@@ -1,8 +1,31 @@
 .benefits {
-    color: green
-}
+    position: relative;
 
-.benefits p {
-    color: currentColor;
-    
+    .container {
+        
+    }
+
+    position: absolute;
+    z-index: 1;
+
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    min-width: 280px;
+    height: 646px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    // background-color: $white-color;
+    background-color: tomato;
+
+
+
+
 }
