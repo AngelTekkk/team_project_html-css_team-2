@@ -11,7 +11,7 @@
 
     background-size: auto auto;
     background-repeat: no-repeat;
-    background-position: right 0 bottom 505px; // ! 
+    background-position: right 0 bottom 505px; //! 499px
 
     @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
         
             background-size: 368px auto;
             background-repeat: no-repeat;
-            background-position: right 0 bottom 290px; // !
+            background-position: right 0 bottom 261px; //! 264px
         
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -491,7 +491,7 @@
         // background-color: tomato;
 
         @include tablet {
-            margin-bottom: 0; //! убрал 40px
+            margin-bottom: 17px; //! = crutch 
             margin-left: 216px;
         }
 

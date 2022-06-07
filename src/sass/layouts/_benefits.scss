@@ -35,22 +35,19 @@
             // text-align: center;
         
             min-width: 688px;
-            // height: 452px;
+            height: 452px;
             // // height: 646px;
         
             // left: 50%;
             // transform: translateX(-50%);
             
-            top: -220px;
+            top: -184px; //! 184px на столько вверх от _about
             // // transform: translateY(-50%);
         
             background-image: linear-gradient(to top,
-                    $white-color 85%,
-                    $title-color 15%);
+                    $white-color 84%,
+                    $title-color 16%);
         
-            background-repeat: no-repeat;
-        
-            box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
         }
 
         @include desktop {
@@ -68,13 +65,9 @@
             // top: -459px;
             // // transform: translateY(-50%);
         
-            // background-image: linear-gradient(to top,
-            //         $white-color 89%,
-            //         $title-color 11%);
-        
-            // background-repeat: no-repeat;
-        
-            // box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
+        background-image: linear-gradient(to top,
+                    $white-color 100%,
+                    $title-color 0%);
         }
     }
 
