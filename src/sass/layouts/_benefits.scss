@@ -16,7 +16,7 @@
         left: 50%;
         transform: translateX(-50%);
         // top: 50%;
-        top: -459px;
+        top: -459px; // -459px на столько вверх от _about
         // transform: translateY(-50%);
     
         background-image: linear-gradient(to top,
@@ -36,7 +36,7 @@
             min-width: 688px;
             height: 452px;
 
-            top: -184px; //! -184px на столько вверх от _about
+            top: -184px; // -184px на столько вверх от _about
         
             background-image: linear-gradient(to top,
                     $white-color 84%,
@@ -110,13 +110,13 @@
             display: flex;
             flex-wrap: wrap;
             gap: 77px;
-            // justify-content: space-around;
-            margin-right: 120px;
-            margin-left: 120px;
-            // margin-left: 45px;
+            justify-content: space-between;
+            margin-right: 40px;
+            margin-left: 40px;
         }
-        
     }
+
+
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__item {
 
@@ -135,12 +135,15 @@
         @include desktop {
             width: 380px; //! по макету = 236px
 
-            margin-top: -17px;
+            &:nth-child(n + 4) {
+                // background-color: orange;
+                margin-top: -30px;
+            }
         }
     }
     
 
-    // !++++++++++++++++++ CSS-счетчик +++++++++++++++++++++
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++
     &__counter {
         margin-bottom: 8px;
 
@@ -150,20 +153,19 @@
         // &::before {
         //     content: "\2014 \0020 0";
         // }
-
+        // !++++++++++++++++++ CSS-счетчик ++++++++++++++
         &::before {
             counter-increment: number;
             content: "\2014 \0020 0" counter(number) "";
         }
-
+        // !_____________________________________________
         @include desktop {
             font-size: 20px;
         }
     }    
-    // !______________________________________________________
 
 
-    // ++++++++++++++++++++++++++++++++++++++++++++++++++
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++
     &__text {
 
         @include font(700, 14px, 1.43, 0.08em);
