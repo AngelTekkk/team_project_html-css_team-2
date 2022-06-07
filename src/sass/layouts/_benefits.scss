@@ -30,18 +30,18 @@
         @include tablet {
             // padding-top: 0;
             padding-bottom: 40px;
-            padding-left: 92px;
-            // padding-right: 44px;
-            // text-align: center;
+            // padding-left: 92px;
+
+            padding-left: 70px;
+            padding-right: 0x;
+
         
             min-width: 688px;
             height: 452px;
-            // // height: 646px;
-        
-            // left: 50%;
-            // transform: translateX(-50%);
+
+
             
-            top: -184px; //! 184px на столько вверх от _about
+            top: -184px; //! -184px на столько вверх от _about
             // // transform: translateY(-50%);
         
             background-image: linear-gradient(to top,
@@ -84,6 +84,8 @@
         color: $white-color;
 
         @include tablet {
+            margin-right: auto;
+            margin-left: auto;
             margin-bottom: 80px;
 
             min-width: 492px;
@@ -108,11 +110,13 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
+            justify-content: space-around;
+            margin-right: auto;
+            margin-left: auto;
             // margin-left: 45px;
         }
         
     }
-
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__item {
 
