@@ -1,20 +1,78 @@
 .program {
-
     position: relative;
-    background-color: $title-color; 
     
     padding-top: 20px;
     padding-bottom: 604px;
 
+    background-color: $title-color;
+
+    background-image:
+        url("../images/program-bcg-480-1x-min.png");
+
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 499px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: 
+                    url("../images/program-bcg-480-2x-min.png");
+    }
+
+
+// !--------------- не открывается картинка ------------------
+    // &::after {
+    //     content: "../images/program-bcg-480-1x-min.png";
+    //     position: absolute;
+    //     display: block;
+
+    //     width: 176px;
+    //     height: 137px;
+
+    //     bottom: 0;
+    //     right: 0;
+    //     z-index: 1;
+    // }
+// !____________________________________________________________
+    
     
     @include tablet {
         padding-top: 60px;
         padding-bottom: 364px;
+
+        background-image:
+                url("../images/program-bcg-768-1x-min.png");
+        
+            background-size: 368px auto;
+            background-repeat: no-repeat;
+            background-position: right 0 bottom 328px;
+        
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url("../images/program-bcg-768-2x-min.png");
+            }
     }
 
     @include desktop {
         padding-top: 80px;
-        padding-bottom: 436px;
+        padding-bottom: 263px;  // !436px;
+
+        background-image:
+                url("../images/program-bcg-1680-1x-min.png");
+        
+            background-size: 684px auto;
+            background-repeat: no-repeat;
+            background-position: left 0 bottom 70px;
+        
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url("../images/program-bcg-1680-2x-min.png");
+            }
     }
 
     .container {
@@ -25,13 +83,6 @@
         }
     }
 
-    // &__container {
-    //     @include tablet {
-    //         display: flex;
-    //         flex-wrap: wrap;
-    //         justify-content: space-between;
-    //     }
-    // }
 
     // !++++++++++++ Стилизация текста ++++++++++++++++++
     &__title {
@@ -392,7 +443,6 @@
                 top: 10px;
                 left: -87px;
             }
-
         }
 
         @include desktop {
@@ -496,39 +546,6 @@
         }
     }
 
-
-
-
-
 // ____________________________________________________
 }
-
-    
-
-
-
-
-
-
-
-    // &__pre-title {
-    //     @include font(700, 14px, 1.57, 00.08em);
-    //     margin-bottom: 40px;
-
-    //     @include tablet {
-    //         margin-bottom: 48px;
-    //     }
-
-    //     @include desktop {
-    //         font-size: 20px;
-    //         line-height: 1.649;
-    //     }
-
-    //     &--accent {
-    //         @include mobile-upto-desktop {
-    //             display: block;
-    //             color: $accent-color;
-    //         }
-    //     }
-    // }
 
