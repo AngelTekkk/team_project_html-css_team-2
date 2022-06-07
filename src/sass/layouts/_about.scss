@@ -1,6 +1,8 @@
 .about {
+  padding-top: 309px; //! для секции _benefits
   margin-bottom: 40px;
   @include desktop {
+    padding-top: 263px; //! для секции _benefits
     margin-bottom: 60px;
   }
 }

@@ -5,12 +5,13 @@
         position: absolute;
         z-index: 1;
 
-
         padding-top: 0;
         padding-bottom: 20px;
-    
+        padding-left: 0;
+        padding-right: 44px;
+
         min-width: 280px;
-        height: 646px;
+        // height: 646px;
     
         left: 50%;
         transform: translateX(-50%);
@@ -18,12 +19,85 @@
         top: -459px;
         // transform: translateY(-50%);
     
-    
+        background-image: linear-gradient(to top,
+                            $white-color 89%,
+                            $title-color 11%);
+        
+        background-repeat: no-repeat;
+            
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     
         // background-color: $white-color;
-        background-color: tomato;
+        // background-color: tomato;
         // color: red;
     }
 
+    // !++++++++++++ Стилизация заголовка ++++++++++++++++++
+    &__title {
+        margin-bottom: 52px;
+
+        max-width: 180px;
+
+        @include title;
+        line-height: 1.36;
+        color: $white-color;
+
+        // @include tablet {
+        //     // width: 334px;
+        //     text-align: left;
+        //     margin-left: 55px;
+        // }
+
+        // @include desktop {
+        //     font-size: 58px;
+        //     margin-bottom: 136px;
+        //     margin-left: 16px;
+        // }
+    }
+
+
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++
+    &__list {
+        @include list;
+        counter-reset: number;
+        
+    }
+
+
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++
+    &__item {
+        padding-left: 20px;
+
+        &:not(:last-child) {
+                margin-bottom: 40px;
+        }
+        
+    }
+    
+
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++
+    &__counter {
+        margin-bottom: 8px;
+
+        @include font(700, 14px, 1.64, 0.08em);
+        color: $accent-color;
+
+        // &::before {
+        //     content: "\2014 \0020 0";
+        // }
+
+        &::before {
+            counter-increment: number;
+            content: "\2014 \0020 0" counter(number) "";
+        }
+    }    
+    
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++
+    &__text {
+
+        @include font(700, 14px, 1.43, 0.08em);
+        color: $title-color;
+
+        
+    }
 }
