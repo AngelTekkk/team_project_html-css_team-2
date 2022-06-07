@@ -77,10 +77,24 @@
           </li>
         </ul>
 
-        <a href="#" class="about__link"
+        <a href="#about" class="about__link" data-modal-open
           >Cambrige English Entry Level Certificate</a
         >
       </div>
+    </div>
+  </div>
+  <div class="about__backdrop is-hidden" data-modal>
+    <div class="about__modal-wrp">
+      <button type="button" data-modal-close class="about__modal-close-btn">
+        <svg class="about__close-btn-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <img
+        class="about__certificate"
+        src="./images/certificate-example.jpg"
+        alt="Certificate example"
+      />
     </div>
   </div>
 </section>
