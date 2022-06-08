@@ -20,6 +20,8 @@ var swiper = new Swiper('.mySwiper', {
 
 // -end-slider
 
+// -------- Mobile menu ---------
+
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
@@ -66,6 +68,8 @@ var swiper = new Swiper('.mySwiper', {
   });
 })();
 
+// ----------- Modal window -----------
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
@@ -83,6 +87,8 @@ var swiper = new Swiper('.mySwiper', {
   }
 })();
 
+//----------- To up button ---------
+
 function up() {
   var top = Math.max(
     document.body.scrollTop,
@@ -95,17 +101,18 @@ function up() {
   return false;
 }
 
-input.onblur = function() {
+//------------- Form validation -----------
+
+input.onblur = function () {
   var result = input.validity.patternMismatch;
   result = String(result);
   // alert(JSON.stringify(result));
-  if (result == "true") {
+  if (result == 'true') {
     input.classList.add('invalid');
   }
 };
-input.onfocus = function() {
+input.onfocus = function () {
   if (this.classList.contains('invalid')) {
     this.classList.remove('invalid');
   }
 };
-
