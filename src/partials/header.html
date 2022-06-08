@@ -26,7 +26,7 @@
         </ul>
       </nav>
       <div class="buttons">
-        <button type="button" class="button-header">
+        <button type="button" class="button-header" data-modal-open-header>
           consultation by phone
         </button>
         <button
@@ -79,12 +79,80 @@
           <a href="#contacts" class="navigation__link" data-link4>Contacts</a>
         </li>
       </ul>
-      <button type="button" class="mob-menu__button">
+      <button type="button" class="mob-menu__button" data-modal-open-header-mob>
         Consultation by phone
       </button>
     </div>
     <div class="back-top">
       <a class="back-top__link" href="#" onclick="return up()">&#8673;</a>
+    </div>
+  </div>
+  <div class="about__backdrop is-hidden" data-modal-header>
+    <div class="about__modal-wrp">
+      <button
+        type="button"
+        data-modal-close-header-mob
+        class="about__modal-close-btn header-mob"
+      >
+        <svg class="about__close-btn-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        data-modal-close-header
+        class="about__modal-close-btn header-tab"
+      >
+        <svg class="about__close-btn-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="contacts__title">
+        Registration for a
+        <span class="contacts__title--add-decor"> free</span> phone<span
+          class="contacts__title--add-decor"
+        >
+          consultation
+        </span>
+        on the nuances of English UPE
+      </h2>
+      <p class="contacts__text">
+        Leave a request for participation in a
+        <span class="contacts__title--add-decor">free lesson</span>. <br />A
+        consultant will contact you and answer your questions
+      </p>
+      <form class="contzcts__form">
+        <label for="user name" class="contacts__label">
+          <div class="contacts-label--position">
+            <input
+              type="text"
+              class="contacts__label--input add-validation"
+              name="user name"
+              id="user name"
+              placeholder="Name*"
+              required
+              minlength="2"
+            />
+          </div>
+        </label>
+        <label for="user phone" class="contacts__label">
+          <div class="contacts-label--position">
+            <input
+              type="tel"
+              class="contacts__label--input"
+              name="user phone"
+              id="input"
+              placeholder="Phone*"
+              required
+              pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"
+              value=""
+            />
+          </div>
+        </label>
+        <button type="submit" class="contacts-button">
+          i want a free lesson
+        </button>
+      </form>
     </div>
   </div>
 </header>

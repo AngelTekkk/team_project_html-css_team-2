@@ -116,3 +116,31 @@ input.onfocus = function () {
     this.classList.remove('invalid');
   }
 };
+
+// ----------- Modal window header -----------
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open-header]'),
+    openModalBtnMob: document.querySelector('[data-modal-open-header-mob]'),
+    closeModalBtn: document.querySelector('[data-modal-close-header]'),
+    closeModalBtnMob: document.querySelector('[data-modal-close-header-mob]'),
+    modal: document.querySelector('[data-modal-header]'),
+    body: document.querySelector('body'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnMob.addEventListener('click', toggleModalMob);
+  refs.closeModalBtnMob.addEventListener('click', toggleModalMob);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
+  }
+
+  function toggleModalMob() {
+    refs.modal.classList.toggle('is-hidden');
+    // refs.body.classList.toggle('no-scroll');
+  }
+})();

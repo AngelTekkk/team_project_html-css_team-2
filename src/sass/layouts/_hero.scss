@@ -77,6 +77,10 @@
         }
     }
 
+    &__link {
+        @include link;
+    }
+
     &__button {
         @include button;
         width: 280px;
