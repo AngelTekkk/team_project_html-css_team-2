@@ -100,7 +100,7 @@
         @include tablet {
             // width: 334px;
             text-align: left;
-            margin-left: 55px;
+            // margin-left: 55px; // !УБРАЛ
         }
 
         @include desktop {
@@ -488,12 +488,12 @@
         @include list;
         display: inline-block;
         text-align: left;
-        padding-left: 30px;
+        padding-left: 30px; 
         // background-color: tomato;
 
         @include tablet {
             margin-bottom: 17px; //! = crutch 
-            margin-left: 216px;
+            margin-left: 161px; // !УБРАЛ 216px
         }
 
         @include desktop {
