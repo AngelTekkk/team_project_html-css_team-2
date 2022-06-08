@@ -1,28 +1,32 @@
 // -> slider
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-    //     autoplay: {
-    //       delay: 3000,
-    //       stopOnLastSlide: false,
-    //       disableOnInteraction: false
-    // },
-        mousewheel: true,
-        keyboard: true,
-      });
+var swiper = new Swiper('.mySwiper', {
+  cssMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+  //     autoplay: {
+  //       delay: 3000,
+  //       stopOnLastSlide: false,
+  //       disableOnInteraction: false
+  // },
+  mousewheel: true,
+  keyboard: true,
+});
 
- // -end-slider
+// -end-slider
 
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
+  const menuLink1 = document.querySelector('[data-link1]');
+  const menuLink2 = document.querySelector('[data-link2]');
+  const menuLink3 = document.querySelector('[data-link3]');
+  const menuLink4 = document.querySelector('[data-link4]');
   const refs = { body: document.querySelector('body') };
 
   menuBtnRef.addEventListener('click', () => {
@@ -34,6 +38,30 @@
 
     mobileMenuRef.classList.toggle('is-open');
 
+    refs.body.classList.toggle('no-scroll');
+  });
+
+  menuLink1.addEventListener('click', () => {
+    menuBtnRef.classList.toggle('is-open');
+    mobileMenuRef.classList.toggle('is-open');
+    refs.body.classList.toggle('no-scroll');
+  });
+
+  menuLink2.addEventListener('click', () => {
+    menuBtnRef.classList.toggle('is-open');
+    mobileMenuRef.classList.toggle('is-open');
+    refs.body.classList.toggle('no-scroll');
+  });
+
+  menuLink3.addEventListener('click', () => {
+    menuBtnRef.classList.toggle('is-open');
+    mobileMenuRef.classList.toggle('is-open');
+    refs.body.classList.toggle('no-scroll');
+  });
+
+  menuLink4.addEventListener('click', () => {
+    menuBtnRef.classList.toggle('is-open');
+    mobileMenuRef.classList.toggle('is-open');
     refs.body.classList.toggle('no-scroll');
   });
 })();
