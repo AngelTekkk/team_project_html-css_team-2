@@ -139,6 +139,9 @@
 
 // ---slider->
 
+.swiper-pagination {
+    padding-bottom: 30px;
+}
 .swiper-pagination-bullet{
     width: 54px;
     height: 54px;
@@ -176,6 +179,9 @@
 
     @include tablet {
         top: 35%;
+    }
+     @media screen and (max-width:419px) {
+         display: none;
     }
 }
 .swiper-button-next::after,
