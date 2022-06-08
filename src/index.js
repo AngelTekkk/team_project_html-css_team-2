@@ -83,3 +83,16 @@ var swiper = new Swiper('.mySwiper', {
   }
 })();
 
+input.onblur = function() {
+  var result = input.validity.patternMismatch;
+  result = String(result);
+  // alert(JSON.stringify(result));
+  if (result == "true") {
+    input.classList.add('invalid');
+  }
+};
+input.onfocus = function() {
+  if (this.classList.contains('invalid')) {
+    this.classList.remove('invalid');
+  }
+};
