@@ -1,5 +1,9 @@
 .how-we-do-it {
   background-color: #fff;
+  padding-bottom: 40px;
+  @include desktop {
+    padding-bottom: 80px;
+  }
 }
 
 .how-we-do-it__title {
