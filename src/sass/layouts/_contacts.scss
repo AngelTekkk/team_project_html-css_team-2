@@ -178,10 +178,11 @@ input:valid:-webkit-autofill,
 input:valid:-webkit-autofill:focus {
     -webkit-text-fill-color: $white-color;
     transition: background-color 5000s ease-in-out 0s; 
-    }
-// input:not(:placeholder-shown):required:invalid {
-//     border-color: red;
-// }
+}
+
+.add-validation:not(:placeholder-shown):required:invalid {
+    border: 2px solid red;
+}
 
 .invalid { border: 2px solid red;}
 
