@@ -8,9 +8,10 @@
     height: 742px;
     
     background-image:
-        linear-gradient(to bottom,
-                $title-color 73%,
-                $white-color 27%);
+        linear-gradient($title-color 73%, $white-color 73%);
+        // linear-gradient(to bottom,
+        //         $title-color 73%,
+        //         $white-color 27%);
                 
     background-repeat: no-repeat;
 
@@ -22,9 +23,10 @@
         height: 509px;
             
         background-image:
-            linear-gradient(to bottom,
-                $title-color 67%,
-                $white-color 33%);
+            linear-gradient($title-color 67%, $white-color 67%);
+            // linear-gradient(to bottom,
+            //     $title-color 67%,
+            //     $white-color 33%);
         
         background-repeat: no-repeat;
     }
@@ -38,9 +40,10 @@
         
         background-image:
             url("../images/bck_problems-min.svg"),
-            linear-gradient(to bottom,
-                    $title-color 73%,
-                    $white-color 27%);
+            linear-gradient($title-color 73%, $white-color 73%);
+            // linear-gradient(to bottom,
+            //         $title-color 73%,
+            //         $white-color 27%);
     
         background-size: 455px auto, cover;
         background-repeat: no-repeat;
