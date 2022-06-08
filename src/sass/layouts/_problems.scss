@@ -19,12 +19,12 @@
         padding-top: 40px;
         padding-left: 32px;
         
-        height: 469px;
+        height: 509px;
             
         background-image:
             linear-gradient(to bottom,
-                $title-color 72%,
-                $white-color 28%);
+                $title-color 67%,
+                $white-color 33%);
         
         background-repeat: no-repeat;
     }
@@ -104,12 +104,13 @@
 
         @include tablet {
 
-            padding-left: 70px;
+            padding-top: 32px;
+            padding-left: 0;
             padding-right: 0x;
-            padding-bottom: 40px;
+            // padding-bottom: 32px;
 
-            min-width: 688px; //! 704px 
-            height: 452px; //! 300px 
+            min-width: 704px; //! 704px 
+            height: 300px; //! 300px 
 
             top: 169px; // 169px на столько вверх от
 
@@ -137,7 +138,7 @@
         @include tablet {
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 15px; //! 30px;
             justify-content: space-around;
             margin-right: auto;
             margin-left: auto;
@@ -165,8 +166,11 @@
         }
 
         @include tablet {
+            margin-left: 0;
+
             &:not(:last-child) {
                 margin-bottom: 0;
+                // background-color: tomato;
             }
 
             width: 236px;
