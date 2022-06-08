@@ -1,0 +1,203 @@
+.section-contacts {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-contacts .container {
+    display: flex;
+    flex-direction: column;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #111518;
+
+    width: 100%;
+    height: 463px;
+    background-image: url(../images/contacts-mob-bg.png);
+
+    @include mobile {
+        width: 320px;
+        height: 463px;
+        background-image: url(../images/contacts-mob-bg.png);
+    }
+    @include tablet {
+        width: 768px;
+        height: 459px;
+        background-image: url(../images/contacts-tablet-bg.png);
+    }
+    @include desktop {
+        width: 1680px;
+        height: 794px;
+        background-image: url(../images/contacts-desktop-bg.png);
+    }
+}
+.contacts__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 55px;
+    font-size: 14px;
+    line-height: 1.38;
+
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+
+    @include mobile {
+        width: 280px;
+    }
+    @include tablet {
+        margin-bottom: 40px;
+        width: 688px;
+        height: 68px;
+        font-size: 26px;
+        line-height: 1.30;
+    }
+    @include desktop {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        width: 1090px;
+        height: 178px;
+        font-size: 46px;
+        line-height: 1.38;
+    }
+}
+.contacts__text {
+    margin-left: auto;
+    margin-right: auto;    
+    text-align: center;
+
+    margin-bottom: 40px;
+    width: 100%;
+    height: 60px;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+
+    @include mobile {
+        width: 280px;
+    }
+    @include tablet {
+        margin-bottom: 24px;
+        width: 452px;
+        height: 51px;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+    @include desktop {
+        margin-bottom: 40px;
+        width: 1090px;
+        height: 74px;
+        font-size: 30px;
+        line-height: 1.23;
+    }
+}
+.contacts__title--add-decor {
+    color: #FF6B09;
+}
+.contacts-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+    width: 90%;
+    height: 48px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: $accent-color;
+    color: $white-color;
+    text-transform: uppercase;
+    @include font(700, 12px, 1.25, 0.08em);
+    
+    @include mobile {
+        width: 280px;
+    }
+    @include tablet {
+        margin-top: 32px;
+        width: 335px;
+    }
+    @include desktop {
+        margin-top: 40px;
+        width: 528px;
+        height: 70px;
+        @include font(700, 14px, 1.215, 0.14em);
+    }
+
+    &:hover,
+    &:focus {
+        border: 2px solid $accent-color;
+        background: none;
+        color: $accent-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        @include transition;
+    }
+}
+.contacts__form {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.contacts__label--input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-left: 28px;
+    width: 90%;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+
+    @include mobile {
+        width: 280px;
+    }
+    @include tablet {
+        padding-left: 24px;
+        margin-bottom: 20px;
+        width: 336px;
+    }
+    @include desktop {
+        margin-bottom: 32px;
+        width: 528px;
+        height: 70px;
+    }
+    transition: border-color 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1); 
+
+    &:focus {
+        outline: none;
+    }
+}
+input:focus:invalid:required {
+    border: 2px solid red;
+    }
+
+input::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+
+    @include desktop {
+        font-size: 20px;
+        line-height: 1.20;
+        }
+    }
