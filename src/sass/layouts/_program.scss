@@ -2,24 +2,26 @@
     position: relative;
     
     padding-top: 40px;
-    padding-bottom: 604px;
+    // padding-bottom: 604px; //! УБРАЛ
 
     background-color: $title-color;
 
-    background-image:
-        url("../images/program-bcg-480-1x-min.png");
+    // background-image:
+    //     url("../images/program-bcg-480-1x-min.png");
 
-    background-size: auto auto;
-    background-repeat: no-repeat;
-    background-position: right -30% bottom 505px; //! 499px
+    // background-size: auto auto;
+    // background-repeat: no-repeat;
+    // background-position: right 0 bottom 505px; //! 499px
+    // // background-attachment: scroll;
 
-    @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: 
-                    url("../images/program-bcg-480-2x-min.png");
-            background-size: 150px 137px; //! задать размер 1х
-    }
+
+    // @media screen and (min-device-pixel-ratio: 2),
+    //         screen and (min-resolution: 192dpi),
+    //         screen and (min-resolution: 2dppx) {
+    //             background-image: 
+    //                 url("../images/program-bcg-480-2x-min.png");
+    //         background-size: 150px 137px; //! задать размер 1х
+    // }
 
 
 // !------------ Рабочий вариаант через ::after ---------------
@@ -46,11 +48,71 @@
     
     @include tablet {
         padding-top: 60px;
-        padding-bottom: 364px;
+        // padding-bottom: 364px; //! УБРАЛ
+
+        // background-image:
+        //         url("../images/program-bcg-768-1x-min.png");
+        
+        //     background-size: 368px auto;
+        //     background-repeat: no-repeat;
+        //     background-position: right 0 bottom 261px; //! 264px
+        
+        //     @media screen and (min-device-pixel-ratio: 2),
+        //     screen and (min-resolution: 192dpi),
+        //     screen and (min-resolution: 2dppx) {
+        //         background-image:
+        //             url("../images/program-bcg-768-2x-min.png");
+        //     }
+    }
+
+    @include desktop {
+        padding-top: 80px;
+        // padding-bottom: 436px; //! УБРАЛ
+
+        // background-image:
+        //         url("../images/program-bcg-1680-1x-min.png");
+        
+        // background-size: 684px auto;
+        // background-repeat: no-repeat;
+        // background-position: left 0 bottom 70px;
+    
+        // @media screen and (min-device-pixel-ratio: 2),
+        // screen and (min-resolution: 192dpi),
+        // screen and (min-resolution: 2dppx) {
+        //     background-image:
+        //         url("../images/program-bcg-1680-2x-min.png");
+        // }
+    }
+
+    .container {
+        text-align: center;
+        padding-bottom: 604px; //! добавил
 
         background-image:
-                url("../images/program-bcg-768-1x-min.png");
+                url("../images/program-bcg-480-1x-min.png");
         
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            background-position: right 0 bottom 505px; //! 505-499px
+            // background-attachment: scroll;
+        
+        
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url("../images/program-bcg-480-2x-min.png");
+                background-size: 150px 137px; //! задать размер 1х
+            }
+
+        @include tablet {
+            text-align: left;
+
+            padding-bottom: 364px; //! добавил
+
+            background-image:
+                    url("../images/program-bcg-768-1x-min.png");
+            
             background-size: 368px auto;
             background-repeat: no-repeat;
             background-position: right 0 bottom 261px; //! 264px
@@ -61,11 +123,11 @@
                 background-image:
                     url("../images/program-bcg-768-2x-min.png");
             }
-    }
+        }
 
-    @include desktop {
-        padding-top: 80px;
-        padding-bottom: 436px; 
+        @include desktop {
+        
+        padding-bottom: 436px; //! добавил
 
         background-image:
                 url("../images/program-bcg-1680-1x-min.png");
@@ -80,13 +142,6 @@
                 background-image:
                     url("../images/program-bcg-1680-2x-min.png");
             }
-    }
-
-    .container {
-        text-align: center;
-
-        @include tablet {
-            text-align: left;
         }
     }
 
