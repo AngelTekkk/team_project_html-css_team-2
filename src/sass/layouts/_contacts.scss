@@ -183,9 +183,10 @@
         outline: none;
     }
 }
-input:focus:invalid:required {
-    border: 2px solid red;
-    }
+
+input:not(:placeholder-shown):required:invalid {
+        border-color: red;    
+}
 
 input::placeholder {
     font-family: 'Montserrat';
