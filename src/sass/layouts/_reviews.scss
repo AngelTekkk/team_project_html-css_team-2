@@ -21,6 +21,7 @@
     @include title;
     padding-top: 40px;
     padding-bottom: 24px;
+    text-align: center;
 }
 .reviews__img {
     margin-left: auto;
@@ -37,6 +38,7 @@
     @include font(800, 14px, 18px, 0.08em);
     color: $accent-color;
     margin-bottom: 16px;
+    text-align: center;
 
     @include tablet {
         font-size: 20px;
