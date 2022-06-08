@@ -83,6 +83,18 @@ var swiper = new Swiper('.mySwiper', {
   }
 })();
 
+function up() {
+  var top = Math.max(
+    document.body.scrollTop,
+    document.documentElement.scrollTop
+  );
+  if (top > 0) {
+    window.scrollBy(0, (top + 100) / -10);
+    t = setTimeout('up()', 20);
+  } else clearTimeout(t);
+  return false;
+}
+
 input.onblur = function() {
   var result = input.validity.patternMismatch;
   result = String(result);
@@ -96,3 +108,4 @@ input.onfocus = function() {
     this.classList.remove('invalid');
   }
 };
+
