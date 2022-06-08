@@ -1,7 +1,92 @@
 .problems {
-    color: tomato;
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    height: 702px;
+    
+    background-image:
+        linear-gradient(to bottom,
+                $title-color 78%,
+                $white-color 22%);
+                
+    background-repeat: no-repeat;
+
+
+    @include tablet {
+        padding-top: 40px;
+        padding-left: 32px;
+        
+        height: 469px;
+            
+        background-image:
+            linear-gradient(to bottom,
+                $title-color 72%,
+                $white-color 28%);
+        
+        background-repeat: no-repeat;
+    }
+    
+    
+    @include desktop {
+        padding-top: 80px;
+        padding-left: 16px;
+    
+        height: 692px;
+        
+        background-image:
+            url("../images/bck_problems-min.svg"),
+            linear-gradient(to bottom,
+                    $title-color 81%,
+                    $white-color 29%);
+    
+        background-size: 455px auto, cover;
+        background-repeat: no-repeat;
+        background-position: top 88px right 0, center;
+    }
+
+
+    &__title {
+        margin-bottom: 24px;
+
+        min-width: 280px;
+
+        text-align: left;
+
+        &--accent {
+            color: $accent-color;
+        }
+
+        @include title;
+        font-size: 24px;
+        color: $white-color;
+
+        @include tablet {
+            margin-bottom: 25px;
+
+            min-width: 568px;
+        }
+
+        @include desktop {
+            margin-bottom: 80px;
+
+            min-width: 866px;
+
+            font-size: 46px;
+        }
+    }
 }
 
-.problems p {
-    color: currentColor;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 .program {
     position: relative;
     
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 604px;
 
     background-color: $title-color;
@@ -11,7 +11,7 @@
 
     background-size: auto auto;
     background-repeat: no-repeat;
-    background-position: right 0 bottom 499px;
+    background-position: right 0 bottom 505px; //! 499px
 
     @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
         
             background-size: 368px auto;
             background-repeat: no-repeat;
-            background-position: right 0 bottom 328px;
+            background-position: right 0 bottom 261px; //! 264px
         
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -64,7 +64,7 @@
 
     @include desktop {
         padding-top: 80px;
-        padding-bottom: 263px;  // !436px;
+        padding-bottom: 436px; 
 
         background-image:
                 url("../images/program-bcg-1680-1x-min.png");
@@ -397,7 +397,7 @@
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__second-title {
         margin-bottom: 4px;
-        @include font(700, 12px, 1.64, 0.08em);
+        @include font(700, 12px, 1.67, 0.08em);
         color: $accent-color;
 
         &::before {
@@ -447,7 +447,10 @@
         }
 
         @include desktop {
-            margin-bottom: 0;
+            &:not(:last-child) {
+                margin-bottom: 0px;
+            }
+
             
             &:not(:last-child) {
                 margin-right: 40px;
@@ -488,13 +491,13 @@
         // background-color: tomato;
 
         @include tablet {
-            margin-bottom: 40px;
+            margin-bottom: 17px; //! = crutch 
             margin-left: 216px;
         }
 
         @include desktop {
             display: flex;
-            margin-bottom: 24px;
+            margin-bottom: 0;
             margin-left: 156px;
         }
     }
@@ -503,6 +506,7 @@
     &__second-list {
         @include list;
         margin-bottom: 4px;
+        width: 176px;
             
         @include tablet {
             margin-bottom: 0px;
@@ -519,7 +523,15 @@
         }
 
         @include desktop {
-            margin-bottom: 24px;
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            &:not(:last-child) {
+                width: 100%;
+            }
+
+            width: 100%;
 
             &:not(:last-child) {
                 margin-right: 0;
