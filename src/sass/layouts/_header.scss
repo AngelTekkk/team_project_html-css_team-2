@@ -188,3 +188,15 @@
         }
     }
 }
+
+.about__modal-close-btn.header-mob {
+    @include tablet {
+        display: none;
+    }
+}
+
+.about__modal-close-btn.header-tab {
+    @include upto-tablet {
+        display: none;
+    }
+}
