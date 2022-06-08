@@ -3,10 +3,6 @@
     padding-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-}
-.section-contacts .container {
-    display: flex;
-    flex-direction: column;
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +13,7 @@
     background-image: url(../images/contacts-mob-bg.png);
 
     @include mobile {
-        width: 320px;
+        width: 480px;
         height: 463px;
         background-image: url(../images/contacts-mob-bg.png);
     }
@@ -32,26 +28,29 @@
         background-image: url(../images/contacts-desktop-bg.png);
     }
 }
+.section-contacts .container {
+    display: flex;
+    flex-direction: column;
+
+    
+}
 .contacts__title {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 24px;
-    width: 100%;
+    width: 280px;
     height: 55px;
     font-size: 14px;
     line-height: 1.38;
 
     text-align: center;
-    font-family: 'Montserrat';
+    font-family: $main-font;
     font-weight: 800;
     letter-spacing: 0.03em;
 
-    color: #FFFFFF;
+    color: $white-color;
 
-    @include mobile {
-        width: 280px;
-    }
     @include tablet {
         margin-bottom: 40px;
         width: 688px;
@@ -62,7 +61,7 @@
     @include desktop {
         margin-top: 80px;
         margin-bottom: 40px;
-        width: 1090px;
+        width: 1050px;
         height: 178px;
         font-size: 46px;
         line-height: 1.38;
@@ -74,19 +73,16 @@
     text-align: center;
 
     margin-bottom: 40px;
-    width: 100%;
+    width: 280px;
     height: 60px;
 
-    font-family: 'Montserrat';
+    font-family: $main-font;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
-    color: #FFFFFF;
+    color: $white-color;
 
-    @include mobile {
-        width: 280px;
-    }
     @include tablet {
         margin-bottom: 24px;
         width: 452px;
@@ -103,7 +99,7 @@
     }
 }
 .contacts__title--add-decor {
-    color: #FF6B09;
+    color: $accent-color;
 }
 .contacts-button {
     margin-left: auto;
@@ -157,9 +153,9 @@
     padding-left: 28px;
     width: 90%;
     height: 48px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white-color;
     background-color: transparent;
-    color: #FFFFFF;
+    color: $white-color;
 
     @include mobile {
         width: 280px;
@@ -174,28 +170,29 @@
         width: 528px;
         height: 70px;
     }
-    transition: border-color 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1); 
-
     &:focus {
         outline: none;
     }
 }
+input:valid:-webkit-autofill,
+input:valid:-webkit-autofill:focus {
+    -webkit-text-fill-color: $white-color;
+    transition: background-color 5000s ease-in-out 0s; 
+    }
+// input:not(:placeholder-shown):required:invalid {
+//     border-color: red;
+// }
 
-input:not(:placeholder-shown):required:invalid {
-        border-color: red;    
-}
+.invalid { border: 2px solid red;}
 
 input::placeholder {
-    font-family: 'Montserrat';
+    font-family: $main-font;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     line-height: 1.21;
     letter-spacing: 0.08em;
-    color: #FFFFFF;
+    color: $white-color;
 
     @include desktop {
         font-size: 20px;

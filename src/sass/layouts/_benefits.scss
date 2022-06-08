@@ -1,6 +1,7 @@
 .benefits {
     position: relative;
 
+    // !============= DIV-контейнер-плашка (benefits__cont) =============
     & .benefits__cont {
         position: absolute;
         z-index: 1;
@@ -10,13 +11,14 @@
         padding-left: 20px;
         padding-right: 44px;
 
+        // width: 280px;
         min-width: 280px;
         // min-height: 646px;
     
         left: 50%;
         transform: translateX(-50%);
         // top: 50%;
-        top: -459px; // -459px на столько вверх от _about
+        top: -460px; // -459px на столько вверх от _about
         // transform: translateY(-50%);
     
         background-image: linear-gradient(to top,
@@ -119,6 +121,8 @@
 
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__item {
+
+        width: 216px;
 
         &:not(:last-child) {
             margin-bottom: 40px;
