@@ -183,15 +183,17 @@ input:valid:-webkit-autofill:focus {
 }
 
 .contacts__label--input:invalid {
-    border: 2px solid red;
+    border: 2px solid #D21404;
+    background-color: rgb(210, 20, 4, 0.1);
 }
 .contacts__label--input:placeholder-shown {
     border: 1px solid $white-color;
+    background-color: transparent;
 }
 .contacts__label--input:focus {
     border: 1px solid $white-color;
+    background-color: transparent;
 }
-
 input::placeholder {
     font-family: $main-font;
     font-weight: 600;
