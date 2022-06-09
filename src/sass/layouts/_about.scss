@@ -1,9 +1,9 @@
 .about {
   padding-top: 309px; //! для секции _benefits
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   @include desktop {
     padding-top: 263px; //! для секции _benefits
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 .about__title {
@@ -128,6 +128,10 @@
   line-height: 1.67;
   text-decoration-line: underline;
   color: #ff6b09;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: rgb(199, 60, 5);
+  }
 
   @include desktop {
     font-size: 18px;
