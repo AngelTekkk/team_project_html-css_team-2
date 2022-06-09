@@ -53,6 +53,8 @@
     &__link {
         @include link;
         @include font(600, 14px, 1.214, 00.08em);
+        @include transition;
+        font-style: normal;
 
         @include tablet {
             font-size: 20px;
@@ -67,7 +69,6 @@
         &:hover,
         &:focus {
             color: $accent-color;
-            @include transition;
         }
     }
     &__icon {

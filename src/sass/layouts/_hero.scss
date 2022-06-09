@@ -13,14 +13,14 @@
         padding-top: 40px;
         padding-bottom: 43px;
         background-image: url(../images/wave-bgnd-det.png);
-        background-position: top left;
+        background-position: center;
         background-size: cover;
     }
 
     @include desktop {
         padding-top: 0;
         padding-bottom: 46px;
-        background-position: top -150px left;
+        background-position: center;
     }
 
     &__container {
@@ -79,6 +79,22 @@
 
     &__link {
         @include link;
+        @include button;
+            width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            @include tablet {
+                width: 260px;
+                margin: 0;
+            }
+        
+            @include desktop {
+                width: 354px;
+            }
     }
 
     &__button {
