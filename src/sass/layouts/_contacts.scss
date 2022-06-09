@@ -157,6 +157,8 @@
     background-color: transparent;
     color: $white-color;
 
+    cursor: pointer;
+
     @include mobile {
         width: 280px;
     }
@@ -180,11 +182,15 @@ input:valid:-webkit-autofill:focus {
     transition: background-color 5000s ease-in-out 0s; 
 }
 
-.add-validation:not(:placeholder-shown):required:invalid {
+.contacts__label--input:invalid {
     border: 2px solid red;
 }
-
-.invalid { border: 2px solid red;}
+.contacts__label--input:placeholder-shown {
+    border: 1px solid $white-color;
+}
+.contacts__label--input:focus {
+    border: 1px solid $white-color;
+}
 
 input::placeholder {
     font-family: $main-font;
