@@ -31,12 +31,11 @@
 }
 .advantage__list {
     margin-left: 0;
-    margin-bottom: -30px;
     padding-left: 0;
     display: flex;
     flex-direction: column;
-
     @include tablet {
+        margin-bottom: 0px;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -46,7 +45,15 @@
 }
 .advantage__item {
     margin-bottom: 30px;
-
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include mobile {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     @include tablet {
         margin-bottom: 0px;
     }
@@ -55,10 +62,10 @@
     position: relative;
     display: flex;
     align-content: center;
-    height: 60px;
+    height: 62px;
 
     @include desktop {
-        height: 100px;
+        height: 103px;
     }
 }
 .advantage__name {
@@ -95,6 +102,7 @@
             width: 100px;
             height: 103px;
         }
+
         .advantage__item:nth-child(1) & {
             background-size: cover;
             background-repeat: no-repeat;
