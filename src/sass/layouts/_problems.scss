@@ -90,9 +90,10 @@
         padding-top: 20px;
         // padding-bottom: 20px;
         padding-left: 32px;
-        // padding-right: 44px;
+        padding-right: 32px; //! добавил
 
-        min-width: 280px;
+        min-width: 280px; //! респонсивный, тянется 
+        // width: 280px; //! жестко задан
         height: 499px; 
 
         left: 50%;
@@ -165,7 +166,10 @@
     // ++++++++++++++++++++++++++++++++++++++++++++++++++
     &__item {
 
-        width: 225px;
+        
+        min-width: 225px; //! респонсивный, тянется 
+        // width: 225px; //! жестко задан
+
 
         &:not(:last-child) {
             margin-bottom: 16px;
