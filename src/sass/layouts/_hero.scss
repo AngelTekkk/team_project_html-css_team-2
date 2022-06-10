@@ -13,14 +13,14 @@
         padding-top: 40px;
         padding-bottom: 43px;
         background-image: url(../images/wave-bgnd-det.png);
-        background-position: center;
+        background-position: 50% 80%;
         background-size: cover;
     }
 
     @include desktop {
         padding-top: 0;
         padding-bottom: 46px;
-        background-position: center;
+        // background-position: 50;
     }
 
     &__container {
